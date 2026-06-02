@@ -1,0 +1,22 @@
+# Runtime dependencies for GlobalPSRO on Ubuntu 20.04 + Python 3.8.10.
+# Install PyTorch separately to match CUDA; this repo is intended to run with torch==2.0.0.
+
+numpy==1.24.4
+scipy==1.10.1
+
+# Classic Gym API; newer Gym/Gymnasium reset/step APIs are unnecessary here.
+gym==0.23.1
+
+# OpenSpiel exposes both `open_spiel` and `pyspiel` imports.
+# 1.3 still provides CPython 3.8 manylinux wheels; newer releases may not.
+open-spiel==1.3
+# OpenSpiel AlphaRank imports visualization helpers at import time.
+matplotlib==3.7.5
+networkx==3.1
+
+wandb==0.22.3
+tensorboardX==2.6.2.2
+setproctitle==1.3.3
+absl-py==2.1.0
+Pympler==1.1
+packaging>=23.2,<25
